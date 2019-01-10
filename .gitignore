@@ -1,0 +1,2 @@
+# exclude tar.xz files
+*.tar.xz
