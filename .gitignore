@@ -1,2 +1,4 @@
 # exclude tar.xz files
 *.tar.xz
+*.csv
+*.gz
