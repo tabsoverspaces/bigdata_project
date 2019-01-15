@@ -7,7 +7,7 @@ start = time.perf_counter()
 
 votes_bag = db.read_text("Votes.tar.xz",compression="xz")
 
-temp = votes_bag.filter(lambda x: x.find("row") >= 0).count().compute()
+temp = votes_bag.filter(lambda x: x.find("row") >= 0).filter(lambda x: x.find("BountyAmount") >= 0).count().compute()
 
 end = time.perf_counter() 
 
@@ -20,6 +20,7 @@ print(end-start,"s")
 
 ## no filter 184 s ~ 3 min
 ## filter 230 s ~ 4 min
+## two filters 262 s
 
 
 
