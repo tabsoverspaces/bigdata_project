@@ -18,4 +18,10 @@ p.map(process_df, filenames)
 # this kills memory 
 #filenames = ["PostsFrame", "AnswersFrame"]
 #p.map(process_df, filenames)
+
+#testtest = dd.read_csv("TagsFrame"+"-0.csv",compression=None)
+#print(testtest.head())
+
+testtest2 = dd.read_csv("PostsFrame"+"-0.csv",compression=None)
+print(testtest2.head())
   
